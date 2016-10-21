@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+import java.util.List;
+
+import bean.Wavetronix;
+
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		List<Wavetronix> wavetronixList = new ArrayList<Wavetronix>();
+		String link = "http://205.221.97.102/Iowa.Sims.AllSites.C2C.Geofenced/"
+				+ "IADOT_SIMS_AllSites_C2C.asmx/OP_ShareTrafficDetectorData?"
+				+ "MSG_TrafficDetectorDataRequest=stringHTTP/1.1";
+		System.out.println("hello");
+		System.out.println(wavetronixList);
+		System.out.println(link);
+	}
+
+}

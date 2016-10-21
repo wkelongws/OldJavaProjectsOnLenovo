@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.apache.hadoop.mapred.KeyValueTextInputFormat"/>
+<fullyQualifiedTypeName name="org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFormat"/>
+<fullyQualifiedTypeName name="org.apache.hadoop.mapred.JobConf"/>
+<fullyQualifiedTypeName name="org.apache.hadoop.mapreduce.lib.input.KeyValueTextInputFormat"/>
+<fullyQualifiedTypeName name="org.apache.hadoop.mapreduce.lib.input.FileSplit"/>
+<fullyQualifiedTypeName name="com.google.gson.Gson"/>
+<fullyQualifiedTypeName name="org.json.simple.JSONObject"/>
+<fullyQualifiedTypeName name="org.json.simple.JSONValue"/>
+<fullyQualifiedTypeName name="java.text.DateFormat"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="java.util.LinkedHashSet"/>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
+<fullyQualifiedTypeName name="javax.xml.soap.Text"/>
+<fullyQualifiedTypeName name="java.util.TreeSet"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.io.FileReader"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.net.URL"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="weka.core.converters.CSVLoader"/>
+<fullyQualifiedTypeName name="weka.filters.unsupervised.attribute.NumericToNominal"/>
+<fullyQualifiedTypeName name="weka.filters.Filter"/>
+<fullyQualifiedTypeName name="weka.classifiers.trees.J48"/>
+<fullyQualifiedTypeName name="weka.classifiers.bayes.NaiveBayes"/>
+<fullyQualifiedTypeName name="weka.classifiers.Evaluation"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="weka.classifiers.functions.Logistic"/>
+<fullyQualifiedTypeName name="weka.classifiers.meta.AdaBoostM1"/>
+<fullyQualifiedTypeName name="weka.classifiers.functions.MultilayerPerceptron"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+</qualifiedTypeNameHistroy>

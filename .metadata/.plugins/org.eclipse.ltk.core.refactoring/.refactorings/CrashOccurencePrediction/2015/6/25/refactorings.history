@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;amplitude&apos; to &apos;amplitudeA&apos;&#x0D;&#x0A;- Original project: &apos;CrashOccurencePrediction&apos;&#x0D;&#x0A;- Original element: &apos;amplitude&apos;&#x0D;&#x0A;- Renamed element: &apos;amplitudeA&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;amplitude&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{amplitude.java[amplitude" matchStrategy="1" name="amplitudeA" qualified="false" references="true" similarDeclarations="false" stamp="1434404257724" textual="false" version="1.0"/>
+</session>

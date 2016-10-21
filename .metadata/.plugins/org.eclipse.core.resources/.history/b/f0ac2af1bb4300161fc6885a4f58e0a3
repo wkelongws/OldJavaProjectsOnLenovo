@@ -1,0 +1,36 @@
+
+
+class test {
+
+    
+	public static void main(String[] args) {
+
+		wavedownloadthread t1 = new wavedownloadthread();
+
+		wavedownloadthread t2 = new wavedownloadthread();
+
+		wavedownloadthread t3 = new wavedownloadthread();
+
+		t1.start();
+
+//		t2.start();
+//
+//   try {
+//
+//       t2.join();
+//
+//   } catch (InterruptedException e) {
+//
+//       System.out.println(e.getMessage());
+//
+//   }
+//
+//   t3.start();
+
+}
+
+
+}
+
+
+

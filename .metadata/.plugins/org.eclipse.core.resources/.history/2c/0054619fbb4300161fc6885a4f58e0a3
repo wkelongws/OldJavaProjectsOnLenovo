@@ -1,0 +1,38 @@
+
+
+class test {
+
+    
+	public static void main(String[] args) {
+
+		Singlethread t1 = new Singlethread();
+
+		Singlethread t2 = new Singlethread();
+
+   Singlethread t3 = new Singlethread();
+
+ 
+
+   t1.start();
+
+   t2.start();
+
+   try {
+
+       t2.join();
+
+   } catch (InterruptedException e) {
+
+       System.out.println(e.getMessage());
+
+   }
+
+   t3.start();
+
+}
+
+
+}
+
+
+

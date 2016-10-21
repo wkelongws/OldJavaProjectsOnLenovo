@@ -1,0 +1,15 @@
+
+public class Singlethread extends Thread{
+    
+	public void run(){
+
+        System.out.println("Single Thread.");
+        try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        System.out.println("Single Thread end.");
+    }
+}

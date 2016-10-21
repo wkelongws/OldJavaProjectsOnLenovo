@@ -1,0 +1,24 @@
+
+
+class Wavedownloadtest {
+
+    
+	public static void main(String[] args) throws InterruptedException {
+
+		while (true){
+		wavedownloadthread t1 = new wavedownloadthread();
+
+//		Singlethread t2 = new Singlethread();
+		System.out.println(System.currentTimeMillis());
+		t1.start();
+		Thread.sleep(20000);
+//		t2.start();
+
+		}
+}
+
+
+}
+
+
+

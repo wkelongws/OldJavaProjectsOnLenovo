@@ -1,0 +1,91 @@
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.w3c.dom.Document;
+
+import bean.Wavetronix;
+
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		List<Wavetronix> wavetronixList = new ArrayList<Wavetronix>();
+		String link = "http://205.221.97.102/Iowa.Sims.AllSites.C2C.Geofenced/"
+				+ "IADOT_SIMS_AllSites_C2C.asmx/OP_ShareTrafficDetectorData?"
+				+ "MSG_TrafficDetectorDataRequest=stringHTTP/1.1";
+		String waveXMLPath = "./temp";
+		String waveFileName = "wavetronix.xml";
+		
+		try {
+			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+			DocumentBuilder builder;
+			builder = factory.newDocumentBuilder();
+			Document document = builder.parse(downloadFromUrl(link, waveXMLPath, waveFileName));
+			System.out.println(document);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		System.out.println("hello");
+		System.out.println(wavetronixList);
+		System.out.println(link);
+		
+		
+		
+	}
+
+	
+	public static File downloadFromUrl(String urlStr, String savePath, String fileName) throws IOException{
+        
+		URL url = new URL(urlStr);  
+        HttpURLConnection conn = (HttpURLConnection)url.openConnection();  
+        conn.setConnectTimeout(5*1000);
+        // avoid the block program
+        conn.setRequestProperty("User-Agent", "Mozilla/4.0 (compatible; MSIE 5.0; Windows NT; DigExt)");
+
+        // get input stream
+        InputStream inputStream = conn.getInputStream();  
+        // get the data array
+        byte[] getData = readInputStream(inputStream);    
+
+        File saveDir = new File(savePath);
+        if(!saveDir.exists()){
+            saveDir.mkdir();
+        }
+        // output data to the file
+        File file = new File(saveDir + File.separator + fileName); 
+        FileOutputStream fos = new FileOutputStream(file);     
+        fos.write(getData); 
+        
+        // close fos and input stream
+        fos.close(); 
+        inputStream.close();
+        
+        return file;
+    }
+
+	public static byte[] readInputStream(InputStream inputStream) throws IOException {  
+	    byte[] buffer = new byte[1024];  
+	    int len = 0;  
+	    ByteArrayOutputStream bos = new ByteArrayOutputStream();  
+	    while((len = inputStream.read(buffer)) != -1) {  
+	        bos.write(buffer, 0, len);  
+	    }  
+	    bos.close();  
+	    return bos.toByteArray();  
+	}
+}

@@ -1,0 +1,9 @@
+
+public class Singlethread extends Thread{
+    
+	public void run(){
+
+        System.out.println("Single Thread.");
+
+    }
+}

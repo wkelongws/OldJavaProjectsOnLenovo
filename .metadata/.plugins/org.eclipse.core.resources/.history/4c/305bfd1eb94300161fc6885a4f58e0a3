@@ -1,0 +1,22 @@
+public class test {
+
+public static void main(String[] args) {
+		
+		    SingleThread thread = new SingleThread();
+		
+		    thread.start();
+		
+		}	
+
+
+class SingleThread extends Thread{
+
+    public void run(){
+
+        System.out.println("Single Thread.");
+
+    }
+
+	}
+
+}

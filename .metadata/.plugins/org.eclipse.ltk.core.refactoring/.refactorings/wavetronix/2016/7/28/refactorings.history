@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 5 elements to &apos;scr&apos;&#x0D;&#x0A;- Original project: &apos;wavetronix&apos;&#x0D;&#x0A;- Destination element: &apos;scr&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     DataLoader.java&#x0D;&#x0A;     WaveDownload.java&#x0D;&#x0A;     TextFileWriter.java&#x0D;&#x0A;     temp&#x0D;&#x0A;     bean&#x0D;&#x0A;- Update references to refactored element" description="Move elements" element1="DataLoader.java" element2="WaveDownload.java" element3="TextFileWriter.java" element4="temp" element5="bean" files="3" flags="589830" folders="2" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1467821853486" target="scr" units="0" version="1.0"/>
+</session>
